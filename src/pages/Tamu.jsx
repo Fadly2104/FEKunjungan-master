@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 
-import Header from '../../partials/Header'
-import Sidebar from '../../partials/Sidebar'
-import Banner from '../../partials/Banner';
-import RuanganCard01 from '../../partials/ruangan/RuanganCard01'
-import RuanganCard02 from '../../partials/ruangan/RuanganCard02';
+import Header from '../partials/Header'
+import Sidebar from '../partials/Sidebar'
+import Banner from '../partials/Banner';
+import RuanganCard01 from '../partials/ruangan/RuanganCard01'
+import RuanganCard02 from '../partials/ruangan/RuanganCard02';
 
-export default function Ruangan() {
+export default function Tamu() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (

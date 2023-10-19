@@ -95,7 +95,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               <span className="lg:hidden lg:sidebar-expanded:block 2xl:block">Pages</span>
             </h3> */}
             <ul className="mt-3">
-              {/* Dashboard */}
+              {/* Beranda */}
               <SidebarLinkGroup activecondition={pathname === '/' || pathname.includes('dashboard')}>
                 {(handleClick) => {
                   return (
@@ -136,62 +136,13 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               Beranda
                             </span>
                           </div>
-                          {/* Icon */}
-                          {/* <div className="flex shrink-0 ml-2">
-                            <svg className={`w-3 h-3 shrink-0 ml-1 fill-current text-slate-400 ${open && 'rotate-180'}`} viewBox="0 0 12 12">
-                              <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
-                            </svg>
-                          </div> */}
                         </div>
                       </a>
-                      {/* <div className="lg:hidden lg:sidebar-expanded:block 2xl:block">
-                        <ul className={`pl-9 mt-1 ${!open && 'hidden'}`}>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/"
-                              className={({ isActive }) =>
-                                'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Beranda
-                              </span>
-                            </NavLink>
-                          </li>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/ruangans"
-                              className={({ isActive }) =>
-                                'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Ruangan
-                              </span>
-                            </NavLink>
-                          </li> */}
-                          {/* <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/dashboard/fintech"
-                              className={({ isActive }) =>
-                                'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Fintech
-                              </span>
-                            </NavLink>
-                          </li> */}
-                        {/* </ul>
-                      </div> */}
                     </React.Fragment>
                   );
                 }}
               </SidebarLinkGroup>
-              {/* E-Commerce */}
+              {/* Ruangan */}
               <SidebarLinkGroup activecondition={pathname.includes('ruangan')}>
                 {(handleClick, open) => {
                   return (
@@ -372,51 +323,51 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   );
                 }}
               </SidebarLinkGroup>
-              {/* Community */}
-              <SidebarLinkGroup activecondition={pathname.includes('community')}>
-                {(handleClick, open) => {
+              {/* Tamu */}
+              <SidebarLinkGroup activecondition={pathname === '/tamu' || pathname.includes('tamu')}>
+                {(handleClick) => {
                   return (
                     <React.Fragment>
                       <a
-                        href="#0"
+                        href="/tamu"
                         className={`block text-slate-200 truncate transition duration-150 ${
-                          pathname.includes('community') ? 'hover:text-slate-200' : 'hover:text-white'
+                          pathname === '/tamu' || pathname.includes('tamu') ? 'hover:text-slate-200' : 'hover:text-white'
                         }`}
                         onClick={(e) => {
                           e.preventDefault();
-                          sidebarExpanded ? handleClick() : setSidebarExpanded(true);
+                          navigate("/tamu")
                         }}
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
                             <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                               <path
-                                className={`fill-current ${pathname.includes('community') ? 'text-indigo-500' : 'text-slate-600'}`}
+                                className={`fill-current ${pathname === '/tamu' || pathname.includes('tamu') ? 'text-indigo-500' : 'text-slate-600'}`}
                                 d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"
                               />
                               <path
-                                className={`fill-current ${pathname.includes('community') ? 'text-indigo-300' : 'text-slate-400'}`}
+                                className={`fill-current ${pathname === '/tamu' || pathname.includes('tamu') ? 'text-indigo-300' : 'text-slate-400'}`}
                                 d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"
                               />
                             </svg>
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Community
+                              Tamu
                             </span>
                           </div>
                           {/* Icon */}
-                          <div className="flex shrink-0 ml-2">
+                          {/* <div className="flex shrink-0 ml-2">
                             <svg className={`w-3 h-3 shrink-0 ml-1 fill-current text-slate-400 ${open && 'rotate-180'}`} viewBox="0 0 12 12">
                               <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
                             </svg>
-                          </div>
+                          </div> */}
                         </div>
                       </a>
-                      <div className="lg:hidden lg:sidebar-expanded:block 2xl:block">
+                      {/* <div className="lg:hidden lg:sidebar-expanded:block 2xl:block">
                         <ul className={`pl-9 mt-1 ${!open && 'hidden'}`}>
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/users-tabs"
+                              to="/tamu/users-tabs"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -429,7 +380,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/users-tiles"
+                              to="/tamu/users-tiles"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -442,7 +393,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/profile"
+                              to="/tamu/profile"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -455,7 +406,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/feed"
+                              to="/tamu/feed"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -468,7 +419,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/forum"
+                              to="/tamu/forum"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -481,7 +432,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/forum-post"
+                              to="/tamu/forum-post"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -494,7 +445,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/meetups"
+                              to="/tamu/meetups"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -507,7 +458,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                           <li className="mb-1 last:mb-0">
                             <NavLink
                               end
-                              to="/community/meetups-post"
+                              to="/tamu/meetups-post"
                               className={({ isActive }) =>
                                 'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
                               }
@@ -518,84 +469,54 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                             </NavLink>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
                     </React.Fragment>
                   );
                 }}
               </SidebarLinkGroup>
-              {/* Tasks */}
-              <SidebarLinkGroup activecondition={pathname.includes('tasks')}>
-                {(handleClick, open) => {
+              {/* Ulasan */}
+              <SidebarLinkGroup activecondition={pathname === '/ulasan' || pathname.includes('ulasan')}>
+                {(handleClick) => {
                   return (
                     <React.Fragment>
                       <a
-                        href="#0"
+                        href="/ulasan"
                         className={`block text-slate-200 truncate transition duration-150 ${
-                          pathname.includes('tasks') ? 'hover:text-slate-200' : 'hover:text-white'
+                          pathname === '/ulasan' || pathname.includes('ulasan') ? 'hover:text-slate-200' : 'hover:text-white'
                         }`}
                         onClick={(e) => {
                           e.preventDefault();
-                          sidebarExpanded ? handleClick() : setSidebarExpanded(true);
+                          navigate("/ulasan")
                         }}
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
                             <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                               <path
-                                className={`fill-current ${pathname.includes('tasks') ? 'text-indigo-500' : 'text-slate-600'}`}
-                                d="M8 1v2H3v19h18V3h-5V1h7v23H1V1z"
+                                className={`fill-current ${
+                                  pathname === '/ulasan' || pathname.includes('ulasan') ? 'text-indigo-500' : 'text-slate-400'
+                                }`}
+                                d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0z"
                               />
                               <path
-                                className={`fill-current ${pathname.includes('tasks') ? 'text-indigo-500' : 'text-slate-600'}`}
-                                d="M1 1h22v23H1z"
+                                className={`fill-current ${
+                                  pathname === '/ulasan' || pathname.includes('ulasan') ? 'text-indigo-600' : 'text-slate-600'
+                                }`}
+                                d="M12 3c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9z"
                               />
                               <path
-                                className={`fill-current ${pathname.includes('tasks') ? 'text-indigo-300' : 'text-slate-400'}`}
-                                d="M15 10.586L16.414 12 11 17.414 7.586 14 9 12.586l2 2zM5 0h14v4H5z"
+                                className={`fill-current ${
+                                  pathname === '/ulasan' || pathname.includes('ulasan') ? 'text-indigo-200' : 'text-slate-400'
+                                }`}
+                                d="M12 15c-1.654 0-3-1.346-3-3 0-.462.113-.894.3-1.285L6 6l4.714 3.301A2.973 2.973 0 0112 9c1.654 0 3 1.346 3 3s-1.346 3-3 3z"
                               />
                             </svg>
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Tasks
-                            </span>
-                          </div>
-                          {/* Icon */}
-                          <div className="flex shrink-0 ml-2">
-                            <svg className={`w-3 h-3 shrink-0 ml-1 fill-current text-slate-400 ${open && 'rotate-180'}`} viewBox="0 0 12 12">
-                              <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
-                            </svg>
+                              Ulasan
+                              </span>
                           </div>
                         </div>
                       </a>
-                      <div className="lg:hidden lg:sidebar-expanded:block 2xl:block">
-                        <ul className={`pl-9 mt-1 ${!open && 'hidden'}`}>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/tasks/kanban"
-                              className={({ isActive }) =>
-                                'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Kanban
-                              </span>
-                            </NavLink>
-                          </li>
-                          <li className="mb-1 last:mb-0">
-                            <NavLink
-                              end
-                              to="/tasks/list"
-                              className={({ isActive }) =>
-                                'block transition duration-150 truncate ' + (isActive ? 'text-indigo-500' : 'text-slate-400 hover:text-slate-200')
-                              }
-                            >
-                              <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                List
-                              </span>
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
                     </React.Fragment>
                   );
                 }}

@@ -12,7 +12,9 @@ import './charts/ChartjsConfig';
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Collaboration from './pages/ruangan/Collaboration';
+import Ruangan from './pages/ruangan/Ruangan'
 import Tamu from './pages/Tamu'
+import Calendar from './pages/Calendar';
 import Ulasan from './pages/Ulasan'
 
 function App() {
@@ -30,7 +32,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/ruangan/collaboration" element={<Collaboration />} />
+        <Route exact path="/ruangan" element={<Ruangan />} />
         <Route exact path="/tamu" element={<Tamu />} />
+        <Route exact path="/calendar" element={<Calendar />} />
         <Route exact path="/ulasan" element={<Ulasan />} />
         {/* <Route exact path="/peminjaman" element={<Ruangan />} /> */}
         {/* <Route exact path="/ruangan" element={<Ruangan />} /> */}

@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 
-import Header from '../../partials/Header'
-import Sidebar from '../../partials/Sidebar'
-import Banner from '../../partials/Banner';
-import RuanganCard01 from '../../partials/ruangan/RuanganCard01'
-import RuanganCard02 from '../../partials/ruangan/RuanganCard02';
+import Header from '../partials/Header'
+import Sidebar from '../partials/Sidebar'
+import Banner from '../partials/Banner';
+import CalendarCard01 from '../partials/calendar/CalendarCard01'
+import RuanganCard02 from '../partials/ruangan/RuanganCard02';
 
-export default function Collaboration() {
+export default function Calendar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -27,7 +27,7 @@ export default function Collaboration() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-              <RuanganCard01 />
+              <CalendarCard01 />
 
               <RuanganCard02 />
 

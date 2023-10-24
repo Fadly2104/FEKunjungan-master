@@ -3,7 +3,9 @@ import React, {useState} from 'react'
 import Header from '../partials/Header'
 import Sidebar from '../partials/Sidebar'
 import Banner from '../partials/Banner';
-import RuanganCard01 from '../partials/ruangan/RuanganCard01'
+import TamuCard01 from '../partials/tamu/TamuCard01'
+import TamuCard02 from '../partials/tamu/TamuCard02'
+
 import RuanganCard02 from '../partials/ruangan/RuanganCard02';
 
 export default function Tamu() {
@@ -27,7 +29,9 @@ export default function Tamu() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-              <RuanganCard01 />
+              <TamuCard01 />
+
+              <TamuCard02 />
 
               <RuanganCard02 />
 

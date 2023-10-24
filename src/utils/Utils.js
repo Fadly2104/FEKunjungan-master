@@ -21,7 +21,7 @@ export const hexToRGB = (h) => {
   return `${+r},${+g},${+b}`;
 };
 
-export const formatValue = (value) => Intl.NumberFormat('en-US', {
+export const formatValue = (value) => Intl.NumberFormat('id-ID', {
   style: 'decimal',
-  notation: 'compact',
+  decimalscale: 1,
 }).format(value);

@@ -10,6 +10,10 @@ import 'chartjs-adapter-moment';
 // Import utilities
 import { tailwindConfig, formatValue } from '../utils/Utils';
 
+// Import moment dan set locale ke bahasa Indonesia
+import moment from 'moment';
+import 'moment/locale/id';
+
 Chart.register(BarController, BarElement, LinearScale, TimeScale, Tooltip, Legend);
 
 function BarChart01({
@@ -71,6 +75,12 @@ function BarChart01({
             },
             ticks: {
               color: darkMode ? textColor.dark : textColor.light,
+              callback: (value) => {
+              // Set locale moment ke bahasa Indonesia
+              moment.locale('id');
+              // Format ulang tanggal dengan format 'dddd' dalam bahasa Indonesia
+              return moment(value).format('dddd');
+              },
             },
           },
         },

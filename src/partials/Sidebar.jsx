@@ -222,7 +222,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Invoices
+                                Inspiring
                               </span>
                             </NavLink>
                           </li>
@@ -235,7 +235,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Shop
+                                Harmonize
                               </span>
                             </NavLink>
                           </li>
@@ -248,7 +248,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                               }
                             >
                               <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                                Shop 2
+                                Synergy
                               </span>
                             </NavLink>
                           </li>
@@ -259,34 +259,34 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 }}
               </SidebarLinkGroup>
               {/* Tamu */}
-              <SidebarLinkGroup activecondition={pathname === '/tamu' || pathname.includes('tamu')}>
+              <SidebarLinkGroup activecondition={pathname.includes('peminjaman')}>
                 {(handleClick) => {
                   return (
                     <React.Fragment>
                       <a
-                        href="/tamu"
+                        href="/peminjaman"
                         className={`block text-slate-200 truncate transition duration-150 ${
-                          pathname === '/tamu' || pathname.includes('tamu') ? 'hover:text-slate-200' : 'hover:text-white'
+                          pathname === '/peminjaman' || pathname.includes('peminjaman') ? 'hover:text-slate-200' : 'hover:text-white'
                         }`}
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/tamu")
+                          navigate("/peminjaman")
                         }}
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex items-center">
                             <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                               <path
-                                className={`fill-current ${pathname === '/tamu' || pathname.includes('tamu') ? 'text-indigo-500' : 'text-slate-600'}`}
+                                className={`fill-current ${pathname === '/peminjaman' || pathname.includes('peminjaman') ? 'text-indigo-500' : 'text-slate-600'}`}
                                 d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"
                               />
                               <path
-                                className={`fill-current ${pathname === '/tamu' || pathname.includes('tamu') ? 'text-indigo-300' : 'text-slate-400'}`}
+                                className={`fill-current ${pathname === '/peminjaman' || pathname.includes('peminjaman') ? 'text-indigo-300' : 'text-slate-400'}`}
                                 d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"
                               />
                             </svg>
                             <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                              Tamu
+                              Peminjaman
                             </span>
                           </div>
                           {/* Icon */}
@@ -432,7 +432,33 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   </div>
                 </NavLink>
               </li>
-              {/* Ulasan */}
+              {/* Campaigns */}
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes('campaigns') && 'bg-slate-900'}`}>
+                <NavLink
+                  end
+                  to="/review"
+                  className={`block text-slate-200 truncate transition duration-150 ${
+                    pathname.includes('review') ? 'hover:text-slate-200' : 'hover:text-white'
+                  }`}
+                >
+                  <div className="flex items-center">
+                    <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                      <path
+                        className={`fill-current ${pathname.includes('review') ? 'text-indigo-500' : 'text-slate-600'}`}
+                        d="M20 7a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 0120 7zM4 23a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 014 23z"
+                      />
+                      <path
+                        className={`fill-current ${pathname.includes('review') ? 'text-indigo-300' : 'text-slate-400'}`}
+                        d="M17 23a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 010-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1zM7 13a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 112 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z"
+                      />
+                    </svg>
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                      Review
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+              {/* Ulasan
               <SidebarLinkGroup activecondition={pathname === '/ulasan' || pathname.includes('ulasan')}>
                 {(handleClick) => {
                   return (
@@ -472,7 +498,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                     </React.Fragment>
                   );
                 }}
-              </SidebarLinkGroup>
+              </SidebarLinkGroup> */}
               {/* Messages */}
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname.includes('messages') && 'bg-slate-900'}`}>
                 <NavLink

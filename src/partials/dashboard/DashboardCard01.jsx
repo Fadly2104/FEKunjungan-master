@@ -14,15 +14,15 @@ function DashboardCard01() {
 
   useEffect(() => {
     const fetchData = () =>{
-     axios.get('https://localhost:7225/api/Tamu').then(postData => {
+      axios.get('https://localhost:7286/api/Peminjaman').then(postData => {
 
      // reshaping the array
-     const customHeadings = postData.data.map(item=>({
-       "idTamu": item.idTamu,
-       "namaTamu": item.namaTamu,
-       "emailTamu": item.emailTamu,
-       "kepentingan": item.kepentingan,
-     }))
+      const customHeadings = postData.data.map(item=>({
+        "namaPIC": item.namaPIC,
+        "email": item.email,
+        "noHp": item.noHp,
+      }))
+      
      setIsi(customHeadings)
     //   console.log(customHeadings);
      })

@@ -16,6 +16,9 @@ import Ruangan from './pages/ruangan/Ruangan'
 import Tamu from './pages/Tamu'
 import Calendar from './pages/Calendar';
 import Ulasan from './pages/Ulasan'
+import Peminjaman from './pages/Peminjaman';
+import DetailPeminjaman from './pages/peminjaman/DetailPeminjaman';
+import Review from './pages/Review';
 
 function App() {
 
@@ -36,8 +39,9 @@ function App() {
         <Route exact path="/tamu" element={<Tamu />} />
         <Route exact path="/calendar" element={<Calendar />} />
         <Route exact path="/ulasan" element={<Ulasan />} />
-        {/* <Route exact path="/peminjaman" element={<Ruangan />} /> */}
-        {/* <Route exact path="/ruangan" element={<Ruangan />} /> */}
+        <Route exact path="/peminjaman" element={<Peminjaman />} />
+        <Route exact path="/detailpeminjaman" element={<DetailPeminjaman />} />
+        <Route exact path="/review" element={<Review />} />
       </Routes>
     </>
   );

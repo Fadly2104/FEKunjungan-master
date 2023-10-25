@@ -9,14 +9,13 @@ const [isi, setIsi] = useState([]);
 
 useEffect(() => {
     const fetchData = () =>{
-     axios.get('https://localhost:7225/api/Tamu').then(postData => {
-  
+        axios.get('https://localhost:7286/api/Peminjaman').then(postData => {
+
      // reshaping the array
      const customHeadings = postData.data.map(item=>({
-       "idTamu": item.idTamu,
-       "namaTamu": item.namaTamu,
-       "emailTamu": item.emailTamu,
-       "kepentingan": item.kepentingan,
+        "namaPIC": item.namaPIC,
+        "email": item.email,
+        "noHp": item.noHp,
      }))
      setIsi(customHeadings)
     //   console.log(customHeadings);
@@ -30,16 +29,16 @@ const wee = isi.map((png) => png);
 
 const columns = [
     {
-        name: 'Nama',
-        selector: row => row.namaTamu,
+        name: 'Nama PIC',
+        selector: row => row.namaPIC,
     },
     {
         name: 'Email',
-        selector: row => row.emailTamu,
+        selector: row => row.email,
     },
     {
-        name: 'Kepentingan',
-        selector: row => row.kepentingan,
+        name: 'No. Hp',
+        selector: row => row.noHp,
     },
 ];
 

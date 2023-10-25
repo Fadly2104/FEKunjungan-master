@@ -16,7 +16,10 @@
     "@mui/material": "^5.14.14",
     "@mui/material-next": "^6.0.0-alpha.106",
     "@mui/x-date-pickers": "^5.0.20",
+    "@react-email/button": "^0.0.10",
+    "@react-email/html": "^0.0.4",
     "@tailwindcss/forms": "^0.5.3",
+    "@types/react-big-calendar": "^1.8.2",
     "axios": "^1.5.1",
     "chart.js": "^4.3.0",
     "chartjs-adapter-moment": "^1.0.1",
@@ -31,6 +34,7 @@
     "react-flatpickr": "^3.10.13",
     "react-router-dom": "^6.17.0",
     "react-transition-group": "^4.4.5",
+    "resend": "^1.1.0",
     "styled-components": "^6.1.0"
   },
   "devDependencies": {

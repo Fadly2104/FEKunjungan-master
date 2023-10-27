@@ -5,7 +5,7 @@ const events = [
   {
     start: moment("2023-10-27T10:00:00").toDate(),
     end: moment("2023-10-27T11:00:00").toDate(),
-    title: "MRI Registration",
+    title: "Anton Szandor LaVey",
     data: {
       type: "Reg",
     },
@@ -13,7 +13,7 @@ const events = [
   {
     start: moment("2023-10-27T14:00:00").toDate(),
     end: moment("2023-10-27T15:30:00").toDate(),
-    title: "ENT Appointment",
+    title: "Jojo",
     data: {
       type: "App",
     },
@@ -26,14 +26,14 @@ const components = {
     switch (eventType) {
       case "Reg":
         return (
-          <div style={{ background: "yellow", color: "white", height: "100%" }}>
+          <div style={{ background: "orange", color: "white", height: "100%" }}>
             {props.title}
           </div>
         );
       case "App":
         return (
           <div
-            style={{ background: "lightgreen", color: "white", height: "100%" }}
+            style={{ background: "darkblue", color: "white", height: "100%" }}
           >
             {props.title}
           </div>

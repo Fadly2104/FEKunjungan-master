@@ -1,68 +1,51 @@
-import React, { useCallback, useState, useMemo, Fragment } from 'react'
-import PropTypes from 'prop-types'
-import { Calendar, Views, DateLocalizer } from 'react-big-calendar'
-import DemoLink from '../partials/calendar/CalendarCard01'
-import events from '../partials/calendar/CalendarCard02'
+import React, {useState} from 'react'
 
-export default function CreateEventWithNoOverlap({
-  localizer,
-  dayLayoutAlgorithm = 'no-overlap',
-}) {
-  const [myEvents, setEvents] = useState(events)
+import Header from '../partials/Header'
+import Sidebar from '../partials/Sidebar'
+import Banner from '../partials/Banner';
+import RuanganCard01 from '../partials/ruangan/RuanganCard01'
+import RuanganCard02 from '../partials/ruangan/RuanganCard02';
 
-  const handleSelectSlot = useCallback(
-    ({ start, end }) => {
-      const title = window.prompt('New Event Name')
-      if (title) {
-        setEvents((prev) => [...prev, { start, end, title }])
-      }
-    },
-    [setEvents]
-  )
+import {
+  BasicCalendar,
+  ControlCalendar,
+  CustomizingCalendar,
+  AdvancedCalendar,
+} from "../partials/kalender/Components";
 
-  const handleSelectEvent = useCallback(
-    (event) => window.alert(event.title),
-    []
-  )
 
-  const { defaultDate, scrollToTime } = useMemo(
-    () => ({
-      defaultDate: new Date(2015, 3, 12),
-      scrollToTime: new Date(1970, 1, 1, 6),
-    }),
-    []
-  )
+export default function Cal() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <Fragment>
-      <DemoLink fileName="createEventWithNoOverlap">
-        <strong>
-          Click an event to see more info, or drag the mouse over the calendar
-          to select a date/time range.
-          <br />
-          The events are being arranged by `no-overlap` algorithm.
-        </strong>
-      </DemoLink>
-      <div className="height600">
-        <Calendar
-          dayLayoutAlgorithm={dayLayoutAlgorithm}
-          defaultDate={defaultDate}
-          defaultView={Views.WEEK}
-          events={myEvents}
-          localizer={localizer}
-          onSelectEvent={handleSelectEvent}
-          onSelectSlot={handleSelectSlot}
-          selectable
-          scrollToTime={scrollToTime}
-        />
+    <div className="flex h-screen overflow-hidden">
+
+      {/* Sidebar */}
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
+      {/* Content area */}
+      <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+
+        {/*  Site header */}
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+
+        <main>
+          <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
+
+            {/* Cards */}
+        
+              <div style={{ height: "95vh" }}>
+
+              <AdvancedCalendar />
+
+              </div>
+
+          </div>
+        </main>
+
+        <Banner />
+
       </div>
-    </Fragment>
-  )
+    </div>
+  );
 }
-
-CreateEventWithNoOverlap.propTypes = {
-  localizer: PropTypes.instanceOf(DateLocalizer),
-  dayLayoutAlgorithm: PropTypes.string,
-}
-
-

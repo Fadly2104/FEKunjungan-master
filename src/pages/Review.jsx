@@ -3,9 +3,12 @@ import React, {useState} from 'react'
 import Header from '../partials/Header'
 import Sidebar from '../partials/Sidebar'
 import Banner from '../partials/Banner';
-import PeminjamanCard01 from '../partials/peminjaman/PeminjamanCard01';
+import TamuCard01 from '../partials/tamu/TamuCard01'
+import TamuCard02 from '../partials/tamu/TamuCard02'
 
-export default function Review() {
+import RuanganCard02 from '../partials/ruangan/RuanganCard02';
+
+export default function Tamu() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -26,14 +29,18 @@ export default function Review() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-              <PeminjamanCard01 />
+              <TamuCard01 />
+
+              <TamuCard02 />
+
+              {/* <RuanganCard02 /> */}
 
             </div>
 
           </div>
         </main>
 
-        <Banner />
+        {/* <Banner /> */}
 
       </div>
     </div>

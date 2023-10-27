@@ -20,12 +20,14 @@
     "@react-email/html": "^0.0.4",
     "@tailwindcss/forms": "^0.5.3",
     "@types/react-big-calendar": "^1.8.2",
+    "@types/react-dom": "^18.2.14",
     "axios": "^1.5.1",
     "chart.js": "^4.3.0",
     "chartjs-adapter-moment": "^1.0.1",
     "date-fns": "^2.30.0",
     "dayjs": "^1.11.10",
     "moment": "^2.29.4",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-big-calendar": "^1.8.4",
     "react-calendar": "^4.6.1",
@@ -35,7 +37,8 @@
     "react-router-dom": "^6.17.0",
     "react-transition-group": "^4.4.5",
     "resend": "^1.1.0",
-    "styled-components": "^6.1.0"
+    "styled-components": "^6.1.0",
+    "tsc": "^2.0.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.1.0",

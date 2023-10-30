@@ -42,7 +42,7 @@ function TamuCard02() {
             <h2 className="text-md font-semibold text-slate-800 dark:text-slate-100 mb-4">Jumlah Tamu Tahun ini</h2>
             {/* <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase mb-1">Sales</div> */}
             <div className="flex items-start">
-            <div className="text-6xl font-bold text-slate-800 dark:text-slate-100 mr-2">2048</div>
+            <div className="text-6xl font-bold text-slate-800 dark:text-slate-100 mr-2">4096</div>
           <div className="text-sm font-semibold text-white px-1.5 bg-amber-500 rounded-full">Tamu</div>
               {/* <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase mb-1">Orang</div> */}
             </div>

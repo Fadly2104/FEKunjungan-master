@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 // Import utilities
 import { tailwindConfig, hexToRGB } from '../../utils/Utils';
   
-function DetailPeminjamanCard01() {
+function DetailReviewCard01() {
 
     const location = useLocation();
 
@@ -48,10 +48,6 @@ function DetailPeminjamanCard01() {
                     <th className='py-5 border-b border-blue-gray-50'>Waktu Selesai:</th>
                     <td className='py-5 border-b border-blue-gray-50'>11:00</td>
                 </tr>
-                <tr>
-                    <th className='py-5 border-b border-blue-gray-50'>Status:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>{location.state.status}</td>
-                </tr>
             </tbody>
           </table>
         {/* </div> */}
@@ -60,4 +56,4 @@ function DetailPeminjamanCard01() {
   );
 }
 
-export default DetailPeminjamanCard01;
+export default DetailReviewCard01;

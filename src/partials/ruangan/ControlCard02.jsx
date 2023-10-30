@@ -1,11 +1,11 @@
 import React from 'react';
 
-import TableControlRuang from '../../components/TableControlRuang01';
+import TableControlRuang from '../../components/TableControlRuang02';
 
 // Import utilities
 import { tailwindConfig, hexToRGB } from '../../utils/Utils';
 
-function ControlCard01() {
+function ControlCard02() {
 
   return (
     <div className="flex flex-col col-span-full sm:col-span-6 md:col-span-12 xl:col-span-12 pb-7 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
@@ -23,4 +23,4 @@ function ControlCard01() {
   );
 }
 
-export default ControlCard01;
+export default ControlCard02;

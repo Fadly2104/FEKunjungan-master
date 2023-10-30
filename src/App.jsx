@@ -16,12 +16,11 @@ import Collaboration from './pages/ruangan/Collaboration';
 import Inspiring from './pages/ruangan/Inspiring';
 import Harmonize from './pages/ruangan/Harmonize';
 import Synergy from './pages/ruangan/Synergy';
-import Tamu from './pages/Tamu'
-import Calendar from './pages/Calendar';
-import Ulasan from './pages/Ulasan'
 import Peminjaman from './pages/Peminjaman';
 import DetailPeminjaman from './pages/peminjaman/DetailPeminjaman';
+import Calendar from './pages/Calendar';
 import Review from './pages/Review';
+import DetailReview from './partials/review/DetailReviewCard01';
 
 function App() {
 
@@ -41,12 +40,11 @@ function App() {
         <Route exact path="/ruangan/inspiring" element={<Inspiring />} />
         <Route exact path="/ruangan/harmonize" element={<Harmonize />} />
         <Route exact path="/ruangan/synergy" element={<Synergy />} />
-        <Route exact path="/tamu" element={<Tamu />} />
-        <Route exact path="/calendar" element={<Calendar />} />
-        <Route exact path="/ulasan" element={<Ulasan />} />
         <Route exact path="/peminjaman" element={<Peminjaman />} />
         <Route exact path="/detailpeminjaman" element={<DetailPeminjaman />} />
+        <Route exact path="/calendar" element={<Calendar />} />
         <Route exact path="/review" element={<Review />} />
+        <Route exact path="/detailreview" element={<DetailReview />} />
       </Routes> 
   );
 }

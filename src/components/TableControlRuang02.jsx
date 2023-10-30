@@ -4,7 +4,7 @@ import DataTable, { createTheme } from 'react-data-table-component';
 import { useThemeProvider } from '../utils/ThemeContext';
 import { Button } from "@material-tailwind/react";
 
-export default function TableRuangCollaboration() {
+export default function TableControlRuang01() {
 
 // const [isi, setIsi] = useState([]);
 
@@ -30,10 +30,6 @@ export default function TableRuangCollaboration() {
 // console.log(wee);
 
 const columns = [
-    {
-        name: 'Ruangan',
-        selector: row => row.namaRuang,
-    },
     {
         name: 'Availability',
         selector: row => row.availability,

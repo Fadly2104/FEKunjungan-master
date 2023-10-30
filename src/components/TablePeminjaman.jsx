@@ -6,7 +6,7 @@ import { useThemeProvider } from '../utils/ThemeContext';
 import { Button } from "@material-tailwind/react";
 
 export default function TablePeminjaman() {
-
+  
 const [isi, setIsi] = useState([]);
 
 useEffect(() => {
@@ -121,7 +121,7 @@ const data = [
 const { currentTheme } = useThemeProvider();
 
     return (
-        <DataTable
+        <DataTable 
             pagination
             fixedHeader
             fixedHeaderScrollHeight="300px"

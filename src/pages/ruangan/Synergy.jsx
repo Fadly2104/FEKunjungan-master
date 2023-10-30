@@ -5,7 +5,7 @@ import Sidebar from '../../partials/Sidebar'
 import Banner from '../../partials/Banner';
 import RuanganCard01 from '../../partials/ruangan/RuanganCard01'
 import RuanganCard02 from '../../partials/ruangan/RuanganCard02';
-import ControlCard01 from '../../partials/ruangan/ControlCard01';
+import ControlCard02 from '../../partials/ruangan/ControlCard02';
 
 export default function Synergy() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function Synergy() {
 
               <RuanganCard01 />
 
-              <ControlCard01 />
+              <ControlCard02 />
 
             </div>
 

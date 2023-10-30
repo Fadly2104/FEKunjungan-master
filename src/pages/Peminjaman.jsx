@@ -6,7 +6,7 @@ import Banner from '../partials/Banner';
 import TamuCard01 from '../partials/tamu/TamuCard01'
 import TamuCard02 from '../partials/tamu/TamuCard02'
 import PeminjamanCard01 from '../partials/peminjaman/PeminjamanCard01';
-
+ 
 export default function Peminjaman() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 

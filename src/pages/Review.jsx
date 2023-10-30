@@ -4,9 +4,7 @@ import Header from '../partials/Header'
 import Sidebar from '../partials/Sidebar'
 import Banner from '../partials/Banner';
 import TamuCard01 from '../partials/tamu/TamuCard01'
-import TamuCard02 from '../partials/tamu/TamuCard02'
-
-import RuanganCard02 from '../partials/ruangan/RuanganCard02';
+import ReviewCard01 from '../partials/review/ReviewCard01'
 
 export default function Tamu() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -29,11 +27,9 @@ export default function Tamu() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-              <TamuCard01 />
+            {/* <TamuCard01 /> */}
 
-              <TamuCard02 />
-
-              {/* <RuanganCard02 /> */}
+            <ReviewCard01 />
 
             </div>
 

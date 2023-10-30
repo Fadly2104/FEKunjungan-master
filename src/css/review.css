@@ -1,0 +1,9 @@
+.star-rating {
+    display: flex;
+  }
+  
+  .star-rating .star-filled {
+    color: orange;
+    cursor: pointer;
+  }
+  

@@ -1,14 +1,11 @@
 import React, {useState} from 'react'
 
-import Header from '../partials/Header'
-import Sidebar from '../partials/Sidebar'
-import Banner from '../partials/Banner';
-import TamuCard01 from '../partials/tamu/TamuCard01'
-import ReviewCard01 from '../partials/review/ReviewCard01'
-import ReviewTable from '../partials/review/ReviewTable'
-import '../css/review.css'
+import Header from '../../partials/Header'
+import Sidebar from '../../partials/Sidebar'
+import Banner from '../../partials/Banner';
+import DetailReviewCard01 from '../../partials/review/DetailReviewCard01';
 
-export default function Tamu() {
+export default function DetailReview() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -29,20 +26,16 @@ export default function Tamu() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-            {/* <TamuCard01 /> */}
-
-            <ReviewCard01 />
-
-            {/* <ReviewTable /> */}
+              <DetailReviewCard01 />
 
             </div>
 
           </div>
         </main>
 
-        {/* <Banner /> */}
+        <Banner />
 
       </div>
     </div>
   );
-};
+}

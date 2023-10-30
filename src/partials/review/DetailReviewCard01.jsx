@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { useLocation } from 'react-router-dom';
+import ReviewTable from '../../partials/review/ReviewTable'
+
 
 // Import utilities
 import { tailwindConfig, hexToRGB } from '../../utils/Utils';
@@ -25,7 +27,7 @@ function DetailReviewCard01() {
                     <td className='py-5 border-b border-blue-gray-50'>666</td>
                 </tr>
                 <tr>
-                    <th className='py-5 border-b border-blue-gray-50'>Nama PIC:</th>
+                    <th className='py-5 border-b border-blue-gray-50'>Nama:</th>
                     <td className='py-5 border-b border-blue-gray-50'>Anton Szandor LaVey</td>
                 </tr>
                 <tr>
@@ -37,16 +39,12 @@ function DetailReviewCard01() {
                     <td className='py-5 border-b border-blue-gray-50'>Meeting</td>
                 </tr>
                 <tr>
-                    <th className='py-5 border-b border-blue-gray-50'>Tanggal:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>24/10/2023</td>
+                    <th className='py-5 border-b border-blue-gray-50'>Review dibuat pada Waktu:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
                 </tr>
                 <tr>
-                    <th className='py-5 border-b border-blue-gray-50'>Waktu Mulai:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:00</td>
-                </tr>
-                <tr>
-                    <th className='py-5 border-b border-blue-gray-50'>Waktu Selesai:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>11:00</td>
+                    <th className='py-5 border-b border-blue-gray-50'>Rating:</th>
+                    <td className='py-5 border-b border-blue-gray-50'><ReviewTable /></td>
                 </tr>
             </tbody>
           </table>

@@ -20,7 +20,7 @@ import Peminjaman from './pages/Peminjaman';
 import DetailPeminjaman from './pages/peminjaman/DetailPeminjaman';
 import Calendar from './pages/Calendar';
 import Review from './pages/Review';
-import DetailReview from './partials/review/DetailReviewCard01';
+import DetailReview from './pages/review/DetailReview';
 
 function App() {
 

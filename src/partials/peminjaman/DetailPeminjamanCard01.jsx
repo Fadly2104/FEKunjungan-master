@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 // Import utilities
 import { tailwindConfig, hexToRGB } from '../../utils/Utils';
-  
+        
 function DetailPeminjamanCard01() {
 
     const location = useLocation();

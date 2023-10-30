@@ -4,6 +4,7 @@ import DataTable, { createTheme } from 'react-data-table-component';
 import { useNavigate } from 'react-router-dom';
 import { useThemeProvider } from '../utils/ThemeContext';
 import { Button } from "@material-tailwind/react";
+import ReviewTable from '../partials/review/ReviewTable'
 
 export default function TableReview() {
 
@@ -59,6 +60,10 @@ const columns = [
         selector: row => row.ruang,
     },
     {
+        name: 'Rating',
+        selector: row => row.rating,
+    },
+    {
         name: 'Aksi',
         selector: row => row.aksi,
     },
@@ -109,6 +114,7 @@ const data = [
     {
         nama: 'Anton Szandor LaVey',
         ruang: 'Collaboration',
+        rating: <ReviewTable />,
         aksi: [detail()],
     }
 ]

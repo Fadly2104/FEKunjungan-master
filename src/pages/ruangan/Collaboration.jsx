@@ -5,6 +5,7 @@ import Sidebar from '../../partials/Sidebar'
 import Banner from '../../partials/Banner';
 import RuanganCard01 from '../../partials/ruangan/RuanganCard01'
 import RuanganCard02 from '../../partials/ruangan/RuanganCard02';
+import ControlCard01 from '../../partials/ruangan/ControlCard01';
 
 export default function Collaboration() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -29,7 +30,7 @@ export default function Collaboration() {
 
               <RuanganCard01 />
 
-              <RuanganCard02 />
+              <ControlCard01 />
 
             </div>
 

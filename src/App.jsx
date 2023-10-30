@@ -11,8 +11,11 @@ import './charts/ChartjsConfig';
 
 // Import pages
 import Dashboard from './pages/Dashboard';
-import Collaboration from './pages/ruangan/Collaboration';
 import Ruangan from './pages/ruangan/Ruangan'
+import Collaboration from './pages/ruangan/Collaboration';
+import Inspiring from './pages/ruangan/Inspiring';
+import Harmonize from './pages/ruangan/Harmonize';
+import Synergy from './pages/ruangan/Synergy';
 import Tamu from './pages/Tamu'
 import Calendar from './pages/Calendar';
 import Ulasan from './pages/Ulasan'
@@ -33,8 +36,11 @@ function App() {
   return (
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/ruangan/collaboration" element={<Collaboration />} />
         <Route exact path="/ruangan" element={<Ruangan />} />
+        <Route exact path="/ruangan/collaboration" element={<Collaboration />} />
+        <Route exact path="/ruangan/inspiring" element={<Inspiring />} />
+        <Route exact path="/ruangan/harmonize" element={<Harmonize />} />
+        <Route exact path="/ruangan/synergy" element={<Synergy />} />
         <Route exact path="/tamu" element={<Tamu />} />
         <Route exact path="/calendar" element={<Calendar />} />
         <Route exact path="/ulasan" element={<Ulasan />} />

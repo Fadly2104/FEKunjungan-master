@@ -1,12 +1,33 @@
 .rbc-header {
-  background: blue;
+  background: blue !important;
   color: white;
   padding: 4px;
   font-weight: bold;
 }
 
+.rbc-toolbar button:active, .rbc-toolbar button.rbc-active {
+  background-color: #0284C7 !important;
+}
+
+.rbc-toolbar button:active, .rbc-toolbar button.rbc-active {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+/* Media query untuk mode gelap */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+}
+
+.rbc-active {
+  color: yellow !important;
+}
+
 .rbc-event {
-  padding: 0;
+  padding: 0 !important;
   font-size: 16px;
 }
 
@@ -14,6 +35,11 @@
   display: none !important;
 }
 
-.rbc-events-container {
-  /* background-color: blueviolet !important; */
-}
+/* .rbc-events-container {
+   background-color: blueviolet !important; 
+} */
+
+
+/* .rbc-today {
+  background-color: ;
+} */

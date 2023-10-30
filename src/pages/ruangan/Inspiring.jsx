@@ -1,14 +1,13 @@
 import React, {useState} from 'react'
 
-import Header from '../partials/Header'
-import Sidebar from '../partials/Sidebar'
-import Banner from '../partials/Banner';
-import TamuCard01 from '../partials/tamu/TamuCard01'
-import TamuCard02 from '../partials/tamu/TamuCard02'
+import Header from '../../partials/Header'
+import Sidebar from '../../partials/Sidebar'
+import Banner from '../../partials/Banner';
+import RuanganCard01 from '../../partials/ruangan/RuanganCard01'
+import RuanganCard02 from '../../partials/ruangan/RuanganCard02';
+import ControlCard01 from '../../partials/ruangan/ControlCard01';
 
-import RuanganCard02 from '../partials/ruangan/RuanganCard02';
-
-export default function Tamu() {
+export default function Inspiring() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -29,20 +28,18 @@ export default function Tamu() {
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
 
-              <TamuCard01 />
+              <RuanganCard01 />
 
-              <TamuCard02 />
-
-              {/* <RuanganCard02 /> */}
+              <ControlCard01 />
 
             </div>
 
           </div>
         </main>
 
-        {/* <Banner /> */}
+        <Banner />
 
       </div>
     </div>
   );
-};
+}

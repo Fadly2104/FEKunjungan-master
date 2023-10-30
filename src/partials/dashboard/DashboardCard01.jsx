@@ -61,7 +61,7 @@ function DashboardCard01() {
         {/* <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase mb-1">Sales</div> */}
         <div className="flex items-start">
         <div className="text-6xl font-bold text-slate-800 dark:text-slate-100 mr-2">{jumlahTamu}</div>
-          <div className="text-sm font-semibold text-white px-1.5 bg-blue-500 rounded-full">Orang</div>
+          <div className="text-sm font-semibold text-white px-1.5 bg-blue-500 rounded-full">Tamu</div>
           {/* <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase mb-1">Orang</div> */}
         </div>
       </div>

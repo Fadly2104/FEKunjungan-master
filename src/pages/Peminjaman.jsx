@@ -3,6 +3,8 @@ import React, {useState} from 'react'
 import Header from '../partials/Header'
 import Sidebar from '../partials/Sidebar'
 import Banner from '../partials/Banner';
+import TamuCard01 from '../partials/tamu/TamuCard01'
+import TamuCard02 from '../partials/tamu/TamuCard02'
 import PeminjamanCard01 from '../partials/peminjaman/PeminjamanCard01';
 
 export default function Peminjaman() {
@@ -25,6 +27,10 @@ export default function Peminjaman() {
 
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6">
+
+              <TamuCard01 />
+
+              <TamuCard02 />
 
               <PeminjamanCard01 />
 

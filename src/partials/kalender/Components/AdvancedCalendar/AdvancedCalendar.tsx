@@ -18,6 +18,14 @@ const events = [
       type: "App",
     },
   },
+  {
+    start: moment("2023-10-30T22:00:00").toDate(),
+    end: moment("2023-10-30T23:59:00").toDate(),
+    title: "Diavolo",
+    data: {
+      type: "App",
+    },
+  },
 ];
 
 const components = {

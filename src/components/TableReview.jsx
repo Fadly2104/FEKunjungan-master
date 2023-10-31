@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useThemeProvider } from '../utils/ThemeContext';
 import { Button } from "@material-tailwind/react";
 import ReviewTable from '../partials/review/ReviewTable'
-
+     
 export default function TableReview() {
 
 const [isi, setIsi] = useState([]);

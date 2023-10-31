@@ -5,7 +5,6 @@ import Sidebar from '../partials/Sidebar'
 import Banner from '../partials/Banner';
 import TamuCard01 from '../partials/tamu/TamuCard01'
 import ReviewCard01 from '../partials/review/ReviewCard01'
-import ReviewTable from '../partials/review/ReviewTable'
 import '../css/review.css'
 
 export default function Tamu() {
@@ -32,8 +31,6 @@ export default function Tamu() {
             {/* <TamuCard01 /> */}
 
             <ReviewCard01 />
-
-            {/* <ReviewTable /> */}
 
             </div>
 

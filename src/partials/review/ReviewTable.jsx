@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa';
 
 function StarRating({ value, onRatingChange }) {
   const stars = [1, 2, 3, 4, 5];
-
+     
   return (
     <div className="star-rating">
       {stars.map((star, index) => (

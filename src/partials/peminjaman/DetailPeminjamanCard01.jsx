@@ -1,15 +1,22 @@
 import React from 'react';
 
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { FaArrowCircleLeft } from 'react-icons/fa';
 
 // Import utilities
 import { tailwindConfig, hexToRGB } from '../../utils/Utils';
         
 function DetailPeminjamanCard01() {
-
+    const history = useNavigate()
     const location = useLocation();
 
   return (
+    <>
+    <div className='back-pinjam'>
+      <button onClick={() => history(-1)}>
+        <FaArrowCircleLeft size={30} /> {/* Ganti 30 dengan ukuran yang Anda inginkan */}
+      </button>
+    </div>
     <div className="flex flex-col col-span-full sm:col-span-6 md:col-span-12 xl:col-span-12 pb-7 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
       <div className="px-5 pt-5">
         <header className="flex justify-between items-start mb-2">
@@ -57,6 +64,7 @@ function DetailPeminjamanCard01() {
         {/* </div> */}
       </div>
     </div>
+    </>
   );
 }
 

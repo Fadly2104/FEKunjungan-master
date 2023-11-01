@@ -1,5 +1,6 @@
 import moment from "moment";
 import Calendar from "../Calendar";
+import React from 'react'
 
 const events = [
   {

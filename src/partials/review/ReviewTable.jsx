@@ -2,11 +2,11 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
 
-function StarRating({ value, onRatingChange }) {
+function ReviewTable({ value, onRatingChange }) {
   const stars = [1, 2, 3, 4, 5];
      
   return (
-    <div className="star-rating">
+    <div className="star-rating" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       {stars.map((star, index) => (
         <FaStar
           key={star}
@@ -18,4 +18,4 @@ function StarRating({ value, onRatingChange }) {
   );
 }
 
-export default StarRating;
+export default ReviewTable;

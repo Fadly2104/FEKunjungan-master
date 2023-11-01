@@ -11,6 +11,7 @@ import {
   AdvancedCalendar,
 } from "../partials/kalender/Components";
 
+import TrialCalendar from '../partials/kalender/Components/TrialCalendar/TrialCalendar'
 
 export default function Cal() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Cal() {
         
               <div style={{ height: "95vh" }}>
 
-              <AdvancedCalendar />
+              <TrialCalendar />
 
               </div>
 

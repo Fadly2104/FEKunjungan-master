@@ -10,6 +10,12 @@ import { tailwindConfig, hexToRGB } from '../../utils/Utils';
 function DetailReviewCard01() {
     const history = useNavigate()
     const location = useLocation();
+
+    const centeredTextStyles = {
+      textAlign: 'center',
+      verticalAlign: 'middle',
+    };
+  
     // const history = useNavigate()
 
   return (
@@ -38,7 +44,7 @@ function DetailReviewCard01() {
                     <th className='py-5 border-b border-blue-gray-50'>Nama:</th>
                     <td className='py-5 border-b border-blue-gray-50'>Anton Szandor LaVey</td>
                 </tr>
-                <tr>
+                <tr>  
                     <th className='py-5 border-b border-blue-gray-50'>Ruangan:</th>
                     <td className='py-5 border-b border-blue-gray-50'>Ruang Collaboration</td>
                 </tr>
@@ -51,8 +57,48 @@ function DetailReviewCard01() {
                     <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
                 </tr>
                 <tr>
-                    <th className='py-5 border-b border-blue-gray-50'>Rating:</th>
-                    <td className='py-5 border-b border-blue-gray-50'><ReviewTable /></td>
+                <th className='py-5 border-b border-blue-gray-50' colSpan="2" style={centeredTextStyles}>Rating Berdasarkan Website</th>
+                </tr>
+                <tr>
+                    <th className='py-5 border-b border-blue-gray-50'>Desain:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                </tr>
+                <tr>
+                    <th className='py-5 border-b border-blue-gray-50'>Navigasi:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                </tr>
+                <tr>
+                    <th className='py-5 border-b border-blue-gray-50'>Kegunaan:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                </tr>
+                <tr>
+                    <th className='py-5 border-b border-blue-gray-50'>Kemudahan:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                </tr>
+                <tr>
+                <th className='py-5 border-b border-blue-gray-50' colSpan="2" style={centeredTextStyles}>Rating Berdasarkan Ruangan</th>
+                </tr>
+                <tr>
+                    <th className='py-5 border-b border-blue-gray-50'>Kenyamanan:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                </tr>
+                <tr>
+                    <th className='py-5 border-b border-blue-gray-50'>Pelayanan:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                </tr>
+                <tr>
+                    <th className='py-5 border-b border-blue-gray-50'>Fasilitas:</th>
+                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                </tr>
+                <tr>
+                    <th className='py-5 border-blue-gray-50' colSpan="2" style={{...centeredTextStyles, padding: '10px 0'}}>Rating Keseluruhan</th>
+                </tr>
+                <tr>
+                <th className='py-5 border-b border-blue-gray-50' colSpan="2" style={{...centeredTextStyles, padding: '10px 0'}}>
+                  <div style={{ fontSize: '50px' }}>
+                    <ReviewTable />
+                  </div>
+                </th>
                 </tr>
             </tbody>
           </table>

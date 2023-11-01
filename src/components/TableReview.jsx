@@ -114,7 +114,10 @@ const data = [
     {
         nama: 'Anton Szandor LaVey',
         ruang: 'Collaboration',
-        rating: <ReviewTable />,
+        rating: 
+            <div style={{ fontSize: '15px' }}>
+                <ReviewTable />
+            </div>,
         aksi: [detail()],
     }
 ]

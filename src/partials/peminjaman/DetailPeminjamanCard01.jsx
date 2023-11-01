@@ -14,7 +14,7 @@ function DetailPeminjamanCard01() {
     <>
     <div className='back-pinjam'>
       <button onClick={() => history(-1)}>
-        <FaArrowCircleLeft size={30} /> {/* Ganti 30 dengan ukuran yang Anda inginkan */}
+        <FaArrowCircleLeft size={30} /> 
       </button>
     </div>
     <div className="flex flex-col col-span-full sm:col-span-6 md:col-span-12 xl:col-span-12 pb-7 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">

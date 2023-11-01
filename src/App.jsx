@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 
 import './css/style.css';
-
+import "react-big-calendar/lib/css/react-big-calendar.css";
 import './charts/ChartjsConfig';
 
 // Import pages

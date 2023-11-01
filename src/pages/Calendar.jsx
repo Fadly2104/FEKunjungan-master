@@ -35,7 +35,7 @@ export default function Cal() {
         
               <div style={{ height: "95vh" }}>
 
-              <TrialCalendar />
+              <AdvancedCalendar />
 
               </div>
 

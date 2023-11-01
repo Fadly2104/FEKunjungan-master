@@ -4,9 +4,9 @@ import React from 'react'
 
 const events = [
   {
-    start: moment("2023-10-27T10:00:00").toDate(),
-    end: moment("2023-10-27T11:00:00").toDate(),
-    title: "Anton Szandor LaVey",
+    start: moment("2023-11-01T13:30:00").toDate(),
+    end: moment("2023-11-01T15:00:00").toDate(),
+    title: "Laporan mingguan",
     data: {
       type: "Reg",
     },

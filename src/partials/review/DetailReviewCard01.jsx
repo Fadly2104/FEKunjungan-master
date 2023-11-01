@@ -3,6 +3,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ReviewTable from '../../partials/review/ReviewTable'
 import { FaArrowCircleLeft } from 'react-icons/fa';
+import "../../css/review.css"
 
 // Import utilities   
 import { tailwindConfig, hexToRGB } from '../../utils/Utils';
@@ -61,44 +62,49 @@ function DetailReviewCard01() {
                 </tr>
                 <tr>
                     <th className='py-5 border-b border-blue-gray-50'>Desain:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                    <td className='py-5 border-b border-blue-gray-50'>5 (Luar Biasa!)</td>
                 </tr>
                 <tr>
                     <th className='py-5 border-b border-blue-gray-50'>Navigasi:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                    <td className='py-5 border-b border-blue-gray-50'>4 (Bagus!)</td>
                 </tr>
                 <tr>
                     <th className='py-5 border-b border-blue-gray-50'>Kegunaan:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                    <td className='py-5 border-b border-blue-gray-50'>3 (Lumayan)</td>
                 </tr>
                 <tr>
                     <th className='py-5 border-b border-blue-gray-50'>Kemudahan:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                    <td className='py-5 border-b border-blue-gray-50'>4 (Bagus!)</td>
                 </tr>
                 <tr>
                 <th className='py-5 border-b border-blue-gray-50' colSpan="2" style={centeredTextStyles}>Rating Berdasarkan Ruangan</th>
                 </tr>
                 <tr>
                     <th className='py-5 border-b border-blue-gray-50'>Kenyamanan:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                    <td className='py-5 border-b border-blue-gray-50'>3 (Lumayan)</td>
                 </tr>
                 <tr>
                     <th className='py-5 border-b border-blue-gray-50'>Pelayanan:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                    <td className='py-5 border-b border-blue-gray-50'>5 (Luar Biasa!)</td>
                 </tr>
                 <tr>
                     <th className='py-5 border-b border-blue-gray-50'>Fasilitas:</th>
-                    <td className='py-5 border-b border-blue-gray-50'>09:27 24/10/2023</td>
+                    <td className='py-5 border-b border-blue-gray-50'>2 (Buruk)</td>
                 </tr>
                 <tr>
                     <th className='py-5 border-blue-gray-50' colSpan="2" style={{...centeredTextStyles, padding: '10px 0'}}>Rating Keseluruhan</th>
                 </tr>
                 <tr>
-                <th className='py-5 border-b border-blue-gray-50' colSpan="2" style={{...centeredTextStyles, padding: '10px 0'}}>
-                  <div style={{ fontSize: '50px' }}>
-                    <ReviewTable />
-                  </div>
-                </th>
+                  <th className='py-5 border-b border-blue-gray-50' colSpan="2" style={{...centeredTextStyles, padding: '10px 0'}}>
+                    <div style={{ fontSize: '50px' }}>
+                      <ReviewTable />
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th className='py-5  border-blue-gray-50' colSpan="2" style={{...centeredTextStyles, padding: '10px 0'}}>Kritik & Saran:</th></tr>
+                <tr>
+                    <th className='py-5 border-blue-gray-50 haha-text' colSpan="2" style={{...centeredTextStyles, padding: '10px 0'}}>Fasilitas TV di Ruang Collaboration tidak berfungsi dengan baik, harap segera diperbaiki</th>
                 </tr>
             </tbody>
           </table>
